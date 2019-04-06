@@ -1,0 +1,15 @@
+<%- include partials/header.ejs %>
+
+<h2>campgrounds list</h2>
+
+
+<% campground.forEach((campground)=>{ %>
+<div class='container'>
+    
+    <img src="<%= campground.image %>" alt="camp image">
+    <caption></caption><h4><%= campground.name %></h4></caption>
+
+</div>
+<% }) %>
+
+<%- include partials/footer.ejs %>
